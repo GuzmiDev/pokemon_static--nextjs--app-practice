@@ -10,7 +10,6 @@ interface Props {
 }
 
 const HomePage: NextPage<Props> = ({ pokemons }) => {
-  console.log(pokemons);
   return (
     <Layout title="Listado de pokemon">
       <Grid.Container gap={2} justify="flex-start">
@@ -33,7 +32,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
     }.svg`,
   }));
 
-  https: return {
+  return {
     props: {
       pokemons,
     },
